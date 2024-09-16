@@ -1,4 +1,9 @@
 from argparse import ArgumentParser
+import sys
+import os
+
+# Add the parent directory to sys.path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import streamlit as st
 from interface.streamlit_utils import get_img_tag
